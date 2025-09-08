@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dial For Hub</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo.png" />
+
+    <!-- Themescript -->
+    <script src="assets/js/theme-script.js"></script>
+
+    <!-- Aos -->
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+    <!-- Tabler Icon CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css"
+    />
+
+    <!-- Datetimepicker CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-datetimepicker.min.css" />
+
+    <!-- select CSS -->
+    <link rel="stylesheet" href="assets/plugins/select2/css/select2.min.css" />
+
+    <!-- Fontawesome Icon CSS -->
+    <link
+      rel="stylesheet"
+      href="assets/plugins/fontawesome/css/fontawesome.min.css"
+    />
+    <link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css" />
+
+    <!-- Owlcarousel CSS -->
+    <link
+      rel="stylesheet"
+      href="assets/plugins/owlcarousel/owl.carousel.min.css"
+    />
+
+    <!--Feather CSS -->
+    <link rel="stylesheet" href="assets/css/feather.css" />
+
+    <!-- Mobile CSS-->
+    <link
+      rel="stylesheet"
+      href="assets/plugins/intltelinput/css/intlTelInput.css"
+    />
+    <link rel="stylesheet" href="assets/plugins/intltelinput/css/demo.css" />
+
+    <!-- Tagsinput CSS -->
+    <link
+      rel="stylesheet"
+      href="assets/plugins/bootstrap-tagsinput/css/bootstrap-tagsinput.css"
+    />
+
+    <!-- Calendar CSS -->
+    <link
+      rel="stylesheet"
+      href="assets/plugins/simple-calendar/simple-calendar.css"
+    />
+
+    <!-- Mobile Input -->
+    <script src="assets/plugins/intltelinput/js/intlTelInput.js"></script>
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body class="provider-page">
+    <!-- Main Wrapper -->
+    <div class="main-wrapper">
+      <!-- Header -->
+      <div class="header provider-header">
+        <!-- Logo -->
+        <div class="header-left active">
+          <a href="index.html" class="logo logo-normal">
+            <img src="assets/img/logo.png" alt="Logo" />
+          </a>
+          <a href="index.html" class="logo-small">
+            <img src="assets/img/logo.png" alt="Logo" />
+          </a>
+          <a id="toggle_btn" href="javascript:void(0);">
+            <i class="ti ti-menu-deep"></i>
+          </a>
+        </div>
+        <!-- /Logo -->
+
+        <a id="mobile_btn" class="mobile_btn" href="#sidebar">
+          <span class="bar-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </a>
+
+        <div class="header-user">
+          <div class="nav user-menu">
+            <div class="d-flex align-items-center">
+              <div class="me-2 site-link">
+                <a
+                  href="https://atisgit-hub2025.github.io/nkfc-web/index.html"
+                  target="_blank"
+                  class="d-flex align-items-center justify-content-center me-2"
+                  ><i class="ti ti-globe me-1"></i>Visit Website</a
+                >
+              </div>
+              <div class="provider-head-links">
+                <div>
+                  <a
+                    href="javascript:void(0);"
+                    id="dark-mode-toggle"
+                    class="dark-mode-toggle me-2"
+                  >
+                    <i class="ti ti-moon-filled"></i>
+                  </a>
+                  <a
+                    href="javascript:void(0);"
+                    id="light-mode-toggle"
+                    class="dark-mode-toggle me-2"
+                  >
+                    <i class="ti ti-sun-filled"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="provider-head-links">
+                <a
+                  href="javascript:void(0);"
+                  class="d-flex align-items-center justify-content-center me-2 dropdown-toggle notify-link"
+                  data-bs-toggle="dropdown"
+                  data-bs-auto-close="outside"
+                  aria-expanded="true"
+                  ><i class="ti ti-bell"></i
+                ></a>
+                <div
+                  class="dropdown-menu dropdown-menu-end notification-dropdown p-3"
+                >
+                  <div
+                    class="d-flex dropdown-body align-items-center justify-content-between border-bottom p-0 pb-3 mb-3"
+                  >
+                    <h6 class="notification-title">
+                      Notifications <span class="fs-16 text-gray"> (1)</span>
+                    </h6>
+                  </div>
+
+                  <div class="noti-content">
+                    <div class="d-flex flex-column">
+                      <div class="border-bottom mb-3 pb-3">
+                        <a href="notification.html">
+                          <div class="d-flex">
+                            <span class="avatar avatar-lg me-2 flex-shrink-0">
+                              <img
+                                src="assets/img/profiles/avatar-52.jpg"
+                                alt="Profile"
+                                class="rounded-circle"
+                              />
+                            </span>
+                            <div class="flex-grow-1">
+                              <div class="d-flex align-items-center">
+                                <p class="mb-1 w-100">
+                                  <span class="text-dark fw-semibold"
+                                    >Suraj Jamdade</span
+                                  >
+                                  rescheduled the service to 14/01/2025.
+                                </p>
+                                <span class="d-flex justify-content-end">
+                                  <i class="ti ti-point-filled text-primary"></i
+                                ></span>
+                              </div>
+                              <span>Just Now</span>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex p-0 notification-footer-btn">
+                    <a href="#" class="btn btn-light rounded me-2">Cancel</a>
+                    <a href="#" class="btn btn-dark rounded">View All</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="dropdown">
+                <a href="javascript:void(0);" data-bs-toggle="dropdown">
+                  <div class="booking-user d-flex align-items-center">
+                    <span class="user-img">
+                      <img src="assets/img/profiles/avatar-02.jpg" alt="user" />
+                    </span>
+                  </div>
+                </a>
+                <ul class="dropdown-menu p-2">
+                  <li>
+                    <a
+                      class="dropdown-item d-flex align-items-center"
+                      href="login.html"
+                      ><i class="ti ti-logout me-1"></i>Logout</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="dropdown mobile-user-menu">
+          <a
+            href="javascript:void(0);"
+            class="nav-link dropdown-toggle"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            ><i class="ti ti-user"></i
+          ></a>
+          <div class="dropdown-menu dropdown-menu-end">
+            <a class="dropdown-item" href="login.html">Logout</a>
+          </div>
+        </div>
+        <!-- /Mobile Menu -->
+      </div>
+      <!-- /Header -->
+
+      <!-- Sidebar -->
+      <div class="sidebar" id="sidebar">
+        <div class="sidebar-inner slimscroll">
+          <div id="sidebar-menu" class="sidebar-menu">
+            <ul>
+              <li>
+                <a href="dashboard.html"
+                  ><i class="ti ti-layout-grid"></i><span>Dashboard</span></a
+                >
+              </li>
+              <li class="active">
+                <a href="services.html"
+                  ><i class="ti ti-briefcase"></i><span>My Services</span></a
+                >
+              </li>
+              <li>
+                <a href="booking.html"
+                  ><i class="ti ti-calendar-month"></i><span>Bookings </span></a
+                >
+              </li>
+              <li>
+                <a href="staff-list.html"
+                  ><i class="ti ti-users"></i><span>Staffs</span></a
+                >
+              </li>
+              <li>
+                <a href="customer-list.html"
+                  ><i class="ti ti-user"></i><span>Customers</span></a
+                >
+              </li>
+
+              <li>
+                <a href="coupons.html"
+                  ><i class="ti ti-ticket"></i><span>Coupons</span></a
+                >
+              </li>
+              <li>
+                <a href="offers.html"
+                  ><i class="ti ti-square-percentage"></i><span>Offers</span></a
+                >
+              </li>
+              <li>
+                <a href="reviews.html"
+                  ><i class="ti ti-star"></i><span>Reviews</span></a
+                >
+              </li>
+              <li>
+                <a href="enquiry.html"
+                  ><i class="ti ti-mail"></i><span>Enquiries</span></a
+                >
+              </li>
+
+              <li class="submenu">
+                <a href="javascript:void(0);"
+                  ><i class="ti ti-settings"></i><span>Settings</span
+                  ><span class="menu-arrow"></span
+                ></a>
+                <ul>
+                  <li>
+                    <a href="accounts-settings.html"
+                      ><i class="ti ti-chevrons-right me-2"></i>Account</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="index.html"
+                  ><i class="ti ti-logout-2"></i><span>Logout</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- /Sidebar -->
+
+      <!-- Page Wrapper -->
+      <div class="page-wrapper">
+        <div class="content container-fluid">
+          <div class="row">
+            <div
+              class="d-flex justify-content-between align-items-center flex-wrap mb-4"
+            >
+              <h5>My Services</h5>
+              <div class="d-flex align-items-center">
+                <a
+                  href="services.html"
+                  class="tags active d-flex justify-content-center align-items-center rounded me-2"
+                  ><i class="ti ti-layout-grid"></i
+                ></a>
+                <a
+                  href="service-list.html"
+                  class="tags d-flex justify-content-center align-items-center border rounded me-2"
+                  ><i class="ti ti-list"></i
+                ></a>
+                <a
+                  href="create-service.html"
+                  class="btn btn-dark d-flex align-items-center"
+                  ><i class="ti ti-circle-plus me-2"></i>Add Services</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-xl-12 col-lg-12">
+              <div class="tab-list mb-4" role="tablist">
+                <ul class="nav d-flex align-items-center">
+                  <li>
+                    <a
+                      href="javascript:void(0);"
+                      class="act-btn active me-3 p-2 rounded fs-14"
+                      data-bs-toggle="tab"
+                      data-bs-target="#active-service"
+                      role="tab"
+                      aria-controls="active-service"
+                      aria-selected="true"
+                      tabindex="-1"
+                      >Active Services</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="javascript:void(0);"
+                      class="act-btn p-2 rounded fs-14"
+                      data-bs-toggle="tab"
+                      data-bs-target="#inactive-service"
+                      role="tab"
+                      aria-controls="inactive-service"
+                      aria-selected="false"
+                      tabindex="-1"
+                    >
+                      Inactive Services
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-content pt-0">
+                <div
+                  class="tab-pane active"
+                  id="active-service"
+                  role="tabpanel"
+                  aria-labelledby="active-service"
+                >
+                  <div class="row justify-content-center align-items-center">
+                    <div class="col-xl-4 col-md-6">
+                      <div class="card p-0">
+                        <div class="card-body p-0">
+                          <div class="img-sec w-100">
+                            <a href="service-details.html"
+                              ><img
+                                src="assets/img/services/1.jpg"
+                                class="img-fluid rounded-top w-100"
+                                alt="img"
+                            /></a>
+                            <div
+                              class="image-tag d-flex justify-content-end align-items-center"
+                            >
+                              <span class="trend-tag">AC</span>
+                              <span
+                                class="trend-tag-2 d-flex justify-content-center align-items-center rating text-gray"
+                                ><i class="ti ti-star filled me-1"></i>4.9</span
+                              >
+                            </div>
+                          </div>
+                          <div class="p-3">
+                            <h5 class="mb-2 text-truncate">
+                              <a href="service-details.html">AC Service</a>
+                            </h5>
+                            <div
+                              class="d-flex justify-content-between align-items-center mb-3"
+                            >
+                              <p class="fs-14 mb-0">
+                                <i class="ti ti-map-pin me-2"></i>Kothrud , pune
+                                , Maharashtra
+                              </p>
+                              <h5>₹ 2500.00</h5>
+                            </div>
+                            <div
+                              class="d-flex justify-content-between align-items-center"
+                            >
+                              <div class="d-flex gap-3">
+                                <a href="edit-services.html"
+                                  ><i class="ti ti-edit me-2"></i>Edit</a
+                                >
+                                <a
+                                  href="javascript:void(0);"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#active"
+                                  ><i class="ti ti-info-circle me-2"></i
+                                  >Inactive</a
+                                >
+                              </div>
+                              <a href="javascript:void(0);" class="btn bg-light"
+                                >Apply Offer</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-xl-4 col-md-6">
+                      <div class="card p-0">
+                        <div class="card-body p-0">
+                          <div class="img-sec w-100">
+                            <a href="service-details.html"
+                              ><img
+                                src="assets/img/services/1.jpg"
+                                class="img-fluid rounded-top w-100"
+                                alt="img"
+                            /></a>
+                            <div
+                              class="image-tag d-flex justify-content-end align-items-center"
+                            >
+                              <span class="trend-tag">AC</span>
+                              <span
+                                class="trend-tag-2 d-flex justify-content-center align-items-center rating text-gray"
+                                ><i class="ti ti-star filled me-1"></i>4.9</span
+                              >
+                            </div>
+                          </div>
+                          <div class="p-3">
+                            <h5 class="mb-2 text-truncate">
+                              <a href="service-details.html">AC Service</a>
+                            </h5>
+                            <div
+                              class="d-flex justify-content-between align-items-center mb-3"
+                            >
+                              <p class="fs-14 mb-0">
+                                <i class="ti ti-map-pin me-2"></i>Kothrud , pune
+                                , Maharashtra
+                              </p>
+                              <h5>₹ 2500.00</h5>
+                            </div>
+                            <div
+                              class="d-flex justify-content-between align-items-center"
+                            >
+                              <div class="d-flex gap-3">
+                                <a href="edit-services.html"
+                                  ><i class="ti ti-edit me-2"></i>Edit</a
+                                >
+                                <a
+                                  href="javascript:void(0);"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#active"
+                                  ><i class="ti ti-info-circle me-2"></i
+                                  >Inactive</a
+                                >
+                              </div>
+                              <a href="javascript:void(0);" class="btn bg-light"
+                                >Apply Offer</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-xl-4 col-md-6">
+                      <div class="card p-0">
+                        <div class="card-body p-0">
+                          <div class="img-sec w-100">
+                            <a href="service-details.html"
+                              ><img
+                                src="assets/img/services/1.jpg"
+                                class="img-fluid rounded-top w-100"
+                                alt="img"
+                            /></a>
+                            <div
+                              class="image-tag d-flex justify-content-end align-items-center"
+                            >
+                              <span class="trend-tag">AC</span>
+                              <span
+                                class="trend-tag-2 d-flex justify-content-center align-items-center rating text-gray"
+                                ><i class="ti ti-star filled me-1"></i>4.9</span
+                              >
+                            </div>
+                          </div>
+                          <div class="p-3">
+                            <h5 class="mb-2 text-truncate">
+                              <a href="service-details.html">AC Service</a>
+                            </h5>
+                            <div
+                              class="d-flex justify-content-between align-items-center mb-3"
+                            >
+                              <p class="fs-14 mb-0">
+                                <i class="ti ti-map-pin me-2"></i>Kothrud , pune
+                                , Maharashtra
+                              </p>
+                              <h5>₹ 2500.00</h5>
+                            </div>
+                            <div
+                              class="d-flex justify-content-between align-items-center"
+                            >
+                              <div class="d-flex gap-3">
+                                <a href="edit-services.html"
+                                  ><i class="ti ti-edit me-2"></i>Edit</a
+                                >
+                                <a
+                                  href="javascript:void(0);"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#active"
+                                  ><i class="ti ti-info-circle me-2"></i
+                                  >Inactive</a
+                                >
+                              </div>
+                              <a href="javascript:void(0);" class="btn bg-light"
+                                >Apply Offer</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="inactive-service"
+                  role="tabpanel"
+                  aria-labelledby="inactive-service"
+                >
+                  <div class="row justify-content-center align-items-center">
+                    <div class="col-xl-4 col-md-6">
+                      <div class="card p-0">
+                        <div class="card-body p-0">
+                          <div class="img-sec w-100">
+                            <a href="service-details.html"
+                              ><img
+                                src="assets/img/services/1.jpg"
+                                class="img-fluid rounded-top w-100"
+                                alt="img"
+                            /></a>
+                            <div
+                              class="image-tag d-flex justify-content-end align-items-center"
+                            >
+                              <span class="trend-tag">AC</span>
+                              <span
+                                class="trend-tag-2 d-flex justify-content-center align-items-center rating text-gray"
+                                ><i class="ti ti-star filled me-1"></i>4.9</span
+                              >
+                            </div>
+                          </div>
+                          <div class="p-3">
+                            <h5 class="mb-2 text-truncate">
+                              <a href="service-details.html">AC Service</a>
+                            </h5>
+                            <div
+                              class="d-flex justify-content-between align-items-center mb-3"
+                            >
+                              <p class="fs-14 mb-0">
+                                <i class="ti ti-map-pin me-2"></i>Kothrud , pune
+                                , Maharashtra
+                              </p>
+                              <h5>₹ 2500.00</h5>
+                            </div>
+                            <div
+                              class="d-flex justify-content-between align-items-center"
+                            >
+                              <div class="d-flex gap-3">
+                                <a href="edit-services.html"
+                                  ><i class="ti ti-edit me-2"></i>Edit</a
+                                >
+                                <a
+                                  href="javascript:void(0);"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#active"
+                                  ><i class="ti ti-info-circle me-2"></i
+                                  >active</a
+                                >
+                              </div>
+                              <a href="javascript:void(0);" class="btn bg-light"
+                                >Apply Offer</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="value d-flex align-items-center">
+                  <span>Show</span>
+                  <select>
+                    <option>7</option>
+                  </select>
+                  <span>entries</span>
+                </div>
+                <div class="d-flex align-items-center justify-content-center">
+                  <span class="me-2 text-gray-9">1 - 07 of 10</span>
+                  <nav aria-label="Page navigation">
+                    <ul
+                      class="paginations d-flex justify-content-center align-items-center"
+                    >
+                      <li class="page-item me-2">
+                        <a
+                          class="page-link-1 active d-flex justify-content-center align-items-center"
+                          href="javascript:void(0);"
+                          >1</a
+                        >
+                      </li>
+                      <li class="page-item me-2">
+                        <a
+                          class="page-link-1 d-flex justify-content-center align-items-center"
+                          href="javascript:void(0);"
+                          >2</a
+                        >
+                      </li>
+                      <li class="page-item">
+                        <a
+                          class="page-link-1 d-flex justify-content-center align-items-center"
+                          href="javascript:void(0);"
+                          >3</a
+                        >
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /Page Wrapper -->
+
+      <!-- Inactive -->
+      <div class="modal fade custom-modal" id="in-active">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div
+              class="modal-header d-flex align-items-center justify-content-between border-bottom"
+            >
+              <h5 class="modal-title">Inactive Service</h5>
+              <a
+                href="javascript:void(0);"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+                ><i class="ti ti-circle-x-filled fs-20"></i
+              ></a>
+            </div>
+            <div class="modal-body">
+              <div class="write-review">
+                <form action="provider-services.html">
+                  <p>Are you sure want to inactive this service?</p>
+                  <div class="modal-submit text-end">
+                    <a
+                      href="javascript:void(0);"
+                      class="btn btn-light me-2"
+                      data-bs-dismiss="modal"
+                      >Cancel</a
+                    >
+                    <button type="submit" class="btn btn-dark">Yes</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Inactive -->
+
+      <!-- active -->
+      <div class="modal fade custom-modal" id="active">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div
+              class="modal-header d-flex align-items-center justify-content-between border-bottom"
+            >
+              <h5 class="modal-title">Active Services</h5>
+              <a
+                href="javascript:void(0);"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+                ><i class="ti ti-circle-x-filled fs-20"></i
+              ></a>
+            </div>
+            <div class="modal-body">
+              <div class="write-review">
+                <form action="provider-services.html">
+                  <p>Are you sure want to active this service?</p>
+                  <div class="modal-submit text-end">
+                    <a
+                      href="javascript:void(0);"
+                      class="btn btn-light me-2"
+                      data-bs-dismiss="modal"
+                      >Cancel</a
+                    >
+                    <button type="submit" class="btn btn-dark">Yes</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /active -->
+
+      <!-- Delete Service -->
+      <div class="modal fade custom-modal" id="del-service">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div
+              class="modal-header d-flex align-items-center justify-content-between border-bottom"
+            >
+              <h5 class="modal-title">Delete Service</h5>
+              <a
+                href="javascript:void(0);"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+                ><i class="ti ti-circle-x-filled fs-20"></i
+              ></a>
+            </div>
+            <div class="modal-body">
+              <div class="write-review">
+                <form action="provider-services.html">
+                  <p>Are you sure want to delete this service?</p>
+                  <div class="modal-submit text-end">
+                    <a
+                      href="javascript:void(0);"
+                      class="btn btn-light me-2"
+                      data-bs-dismiss="modal"
+                      >Cancel</a
+                    >
+                    <button type="submit" class="btn btn-dark">Yes</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /Delete Service -->
+
+      <!-- Delete Account -->
+      <div class="modal fade custom-modal" id="del-account">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div
+              class="modal-header d-flex align-items-center justify-content-between border-bottom"
+            >
+              <h5 class="modal-title">Delete Account</h5>
+              <a
+                href="javascript:void(0);"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+                ><i class="ti ti-circle-x-filled fs-20"></i
+              ></a>
+            </div>
+            <form action="#">
+              <div class="modal-body">
+                <p class="mb-3">
+                  Are you sure you want to delete This Account? To delete your
+                  account, Type your password.
+                </p>
+                <div class="mb-0">
+                  <label class="form-label">Password</label>
+                  <div class="pass-group">
+                    <input
+                      type="password"
+                      class="form-control pass-input"
+                      placeholder="*************"
+                    />
+                    <span class="toggle-password feather-eye-off"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a
+                  href="javascript:void(0);"
+                  class="btn btn-light me-2"
+                  data-bs-dismiss="modal"
+                  >Cancel</a
+                >
+                <button type="submit" class="btn btn-dark">
+                  Delete Account
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- /Delete Account -->
+    </div>
+    <!-- /Main Wrapper -->
+
+    <!-- Jquery JS -->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+
+    <!-- Slimscroll JS -->
+    <script src="assets/js/jquery.slimscroll.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Wow JS -->
+    <script src="assets/js/wow.min.js"></script>
+
+    <!-- select JS -->
+    <script src="assets/plugins/select2/js/select2.min.js"></script>
+
+    <!-- Owlcarousel Js -->
+    <script src="assets/plugins/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- counterup JS -->
+    <script src="assets/js/cursor.js"></script>
+
+    <!-- Apexchart JS -->
+    <script src="assets/plugins/apexchart/apexcharts.min.js"></script>
+    <script src="assets/plugins/apexchart/chart-data.js"></script>
+
+    <!-- Tagsinput JS -->
+    <script src="assets/plugins/bootstrap-tagsinput/js/bootstrap-tagsinput.js"></script>
+
+    <!-- Calendar Js -->
+    <script src="assets/plugins/simple-calendar/jquery.simple-calendar.min.js"></script>
+    <script src="assets/js/calender.js"></script>
+
+    <!-- Script JS -->
+    <script src="assets/js/script.js"></script>
+    <script
+      src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js"
+      data-cf-settings="0f581ff698b658a40210fae1-|49"
+      defer
+    ></script>
+    <script
+      defer
+      src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015"
+      integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
+      data-cf-beacon='{"rayId":"97b4381ebb7b2dff","serverTiming":{"name":{"cfExtPri":true,"cfEdge":true,"cfOrigin":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"version":"2025.8.0","token":"3ca157e612a14eccbb30cf6db6691c29"}'
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

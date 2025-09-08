@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dial For Hub</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo.png" />
+
+    <!-- Themescript -->
+    <script src="assets/js/theme-script.js"></script>
+
+    <!-- Aos -->
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+    <!-- Tabler Icon CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css"
+    />
+
+    <!-- Datetimepicker CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-datetimepicker.min.css" />
+
+    <!-- select CSS -->
+    <link rel="stylesheet" href="assets/plugins/select2/css/select2.min.css" />
+
+    <!-- Fontawesome Icon CSS -->
+    <link
+      rel="stylesheet"
+      href="assets/plugins/fontawesome/css/fontawesome.min.css"
+    />
+    <link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css" />
+
+    <!-- Owlcarousel CSS -->
+    <link
+      rel="stylesheet"
+      href="assets/plugins/owlcarousel/owl.carousel.min.css"
+    />
+
+    <!--Feather CSS -->
+    <link rel="stylesheet" href="assets/css/feather.css" />
+
+    <!-- Mobile CSS-->
+    <link
+      rel="stylesheet"
+      href="assets/plugins/intltelinput/css/intlTelInput.css"
+    />
+    <link rel="stylesheet" href="assets/plugins/intltelinput/css/demo.css" />
+
+    <!-- Tagsinput CSS -->
+    <link
+      rel="stylesheet"
+      href="assets/plugins/bootstrap-tagsinput/css/bootstrap-tagsinput.css"
+    />
+
+    <!-- Calendar CSS -->
+    <link
+      rel="stylesheet"
+      href="assets/plugins/simple-calendar/simple-calendar.css"
+    />
+
+    <!-- Mobile Input -->
+    <script src="assets/plugins/intltelinput/js/intlTelInput.js"></script>
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body class="provider-page">
+    <!-- Main Wrapper -->
+    <div class="main-wrapper">
+      <!-- Header -->
+      <div class="header provider-header">
+        <!-- Logo -->
+        <div class="header-left active">
+          <a href="index.html" class="logo logo-normal">
+            <img src="assets/img/logo.png" alt="Logo" />
+          </a>
+          <a href="index.html" class="logo-small">
+            <img src="assets/img/logo.png" alt="Logo" />
+          </a>
+          <a id="toggle_btn" href="javascript:void(0);">
+            <i class="ti ti-menu-deep"></i>
+          </a>
+        </div>
+        <!-- /Logo -->
+
+        <a id="mobile_btn" class="mobile_btn" href="#sidebar">
+          <span class="bar-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </a>
+
+        <div class="header-user">
+          <div class="nav user-menu">
+            <div class="d-flex align-items-center">
+              <div class="me-2 site-link">
+                <a
+                  href="https://atisgit-hub2025.github.io/nkfc-web/index.html"
+                  target="_blank"
+                  class="d-flex align-items-center justify-content-center me-2"
+                  ><i class="ti ti-globe me-1"></i>Visit Website</a
+                >
+              </div>
+              <div class="provider-head-links">
+                <div>
+                  <a
+                    href="javascript:void(0);"
+                    id="dark-mode-toggle"
+                    class="dark-mode-toggle me-2"
+                  >
+                    <i class="ti ti-moon-filled"></i>
+                  </a>
+                  <a
+                    href="javascript:void(0);"
+                    id="light-mode-toggle"
+                    class="dark-mode-toggle me-2"
+                  >
+                    <i class="ti ti-sun-filled"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="provider-head-links">
+                <a
+                  href="javascript:void(0);"
+                  class="d-flex align-items-center justify-content-center me-2 dropdown-toggle notify-link"
+                  data-bs-toggle="dropdown"
+                  data-bs-auto-close="outside"
+                  aria-expanded="true"
+                  ><i class="ti ti-bell"></i
+                ></a>
+                <div
+                  class="dropdown-menu dropdown-menu-end notification-dropdown p-3"
+                >
+                  <div
+                    class="d-flex dropdown-body align-items-center justify-content-between border-bottom p-0 pb-3 mb-3"
+                  >
+                    <h6 class="notification-title">
+                      Notifications <span class="fs-16 text-gray"> (1)</span>
+                    </h6>
+                  </div>
+
+                  <div class="noti-content">
+                    <div class="d-flex flex-column">
+                      <div class="border-bottom mb-3 pb-3">
+                        <a href="notification.html">
+                          <div class="d-flex">
+                            <span class="avatar avatar-lg me-2 flex-shrink-0">
+                              <img
+                                src="assets/img/profiles/avatar-52.jpg"
+                                alt="Profile"
+                                class="rounded-circle"
+                              />
+                            </span>
+                            <div class="flex-grow-1">
+                              <div class="d-flex align-items-center">
+                                <p class="mb-1 w-100">
+                                  <span class="text-dark fw-semibold"
+                                    >Suraj Jamdade</span
+                                  >
+                                  rescheduled the service to 14/01/2025.
+                                </p>
+                                <span class="d-flex justify-content-end">
+                                  <i class="ti ti-point-filled text-primary"></i
+                                ></span>
+                              </div>
+                              <span>Just Now</span>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex p-0 notification-footer-btn">
+                    <a href="#" class="btn btn-light rounded me-2">Cancel</a>
+                    <a href="#" class="btn btn-dark rounded">View All</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="dropdown">
+                <a href="javascript:void(0);" data-bs-toggle="dropdown">
+                  <div class="booking-user d-flex align-items-center">
+                    <span class="user-img">
+                      <img src="assets/img/profiles/avatar-02.jpg" alt="user" />
+                    </span>
+                  </div>
+                </a>
+                <ul class="dropdown-menu p-2">
+                  <li>
+                    <a
+                      class="dropdown-item d-flex align-items-center"
+                      href="login.html"
+                      ><i class="ti ti-logout me-1"></i>Logout</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="dropdown mobile-user-menu">
+          <a
+            href="javascript:void(0);"
+            class="nav-link dropdown-toggle"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            ><i class="ti ti-user"></i
+          ></a>
+          <div class="dropdown-menu dropdown-menu-end">
+            <a class="dropdown-item" href="login.html">Logout</a>
+          </div>
+        </div>
+        <!-- /Mobile Menu -->
+      </div>
+      <!-- /Header -->
+
+      <!-- Sidebar -->
+      <div class="sidebar" id="sidebar">
+        <div class="sidebar-inner slimscroll">
+          <div id="sidebar-menu" class="sidebar-menu">
+            <ul>
+              <li>
+                <a href="dashboard.html"
+                  ><i class="ti ti-layout-grid"></i><span>Dashboard</span></a
+                >
+              </li>
+              <li>
+                <a href="services.html"
+                  ><i class="ti ti-briefcase"></i><span>My Services</span></a
+                >
+              </li>
+              <li>
+                <a href="booking.html"
+                  ><i class="ti ti-calendar-month"></i><span>Bookings </span></a
+                >
+              </li>
+              <li>
+                <a href="staff-list.html"
+                  ><i class="ti ti-users"></i><span>Staffs</span></a
+                >
+              </li>
+              <li>
+                <a href="customer-list.html"
+                  ><i class="ti ti-user"></i><span>Customers</span></a
+                >
+              </li>
+
+              <li>
+                <a href="coupons.html"
+                  ><i class="ti ti-ticket"></i><span>Coupons</span></a
+                >
+              </li>
+              <li>
+                <a href="offers.html"
+                  ><i class="ti ti-square-percentage"></i><span>Offers</span></a
+                >
+              </li>
+              <li>
+                <a href="reviews.html"
+                  ><i class="ti ti-star"></i><span>Reviews</span></a
+                >
+              </li>
+              <li>
+                <a href="enquiry.html"
+                  ><i class="ti ti-mail"></i><span>Enquiries</span></a
+                >
+              </li>
+
+              <li class="submenu active">
+                <a href="javascript:void(0);"
+                  ><i class="ti ti-settings"></i><span>Settings</span
+                  ><span class="menu-arrow"></span
+                ></a>
+                <ul>
+                  <li>
+                    <a href="accounts-settings.html"
+                      ><i class="ti ti-chevrons-right me-2"></i>Account</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="index.html"
+                  ><i class="ti ti-logout-2"></i><span>Logout</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- /Sidebar -->
+
+      <!-- Page Wrapper -->
+      <div class="page-wrapper">
+        <div class="content container-fluid">
+          <div class="row">
+            <div class="col-md-10 mx-auto">
+              <div
+                class="d-flex justify-content-between align-items-center flex-wrap mb-4"
+              >
+                <h5>Account Settings</h5>
+              </div>
+            </div>
+          </div>
+          <!-- Profile settings -->
+          <div class="row">
+            <div class="col-md-10 mx-auto">
+              <!-- Account Settings -->
+              <div class="card mb-0">
+                <div class="card-body">
+                  <h6 class="user-title">Profile Picture</h6>
+                  <div class="pro-picture">
+                    <div class="pro-img avatar avatar-xl">
+                      <img
+                        src="assets/img/user/user-01.jpg"
+                        alt="user"
+                        class="img-fluid rounded-circle"
+                      />
+                    </div>
+                    <div class="pro-info">
+                      <div class="d-flex mb-2">
+                        <a
+                          href="javascript:void(0);"
+                          class="btn btn-dark btn-sm d-flex align-items-center me-3"
+                          ><i class="ti ti-cloud-upload me-1"></i>Upload</a
+                        >
+                        <a
+                          href="javascript:void(0);"
+                          class="btn btn-light btn-sm d-flex align-items-center"
+                          >Remove</a
+                        >
+                      </div>
+                      <p class="fs-14">
+                        *image size should be at least 320px big,and less then
+                        500kb. Allowed files .png and .jpg.
+                      </p>
+                    </div>
+                  </div>
+                  <h6 class="user-title">General Information</h6>
+                  <div class="general-info">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="mb-3">
+                          <label class="form-label">Name</label>
+                          <input type="text" class="form-control" />
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="mb-3">
+                          <label class="form-label">User Name</label>
+                          <input type="text" class="form-control" />
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="mb-3">
+                          <label class="form-label">Email</label>
+                          <input type="email" class="form-control" />
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="mb-3">
+                          <label class="form-label">Mobile Number</label>
+                          <input type="text" class="form-control" />
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="mb-3">
+                          <label class="form-label">Gender</label>
+                          <select
+                            class="select select2-hidden-accessible"
+                            data-select2-id="1"
+                            tabindex="-1"
+                            aria-hidden="true"
+                          >
+                            <option data-select2-id="3">Select</option>
+                            <option>Male</option>
+                            <option>Female</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="mb-3">
+                          <label class="form-label">Date of birth</label>
+                          <div class="input-icon position-relative">
+                            <span class="input-icon-addon"
+                              ><i class="ti ti-calendar"></i
+                            ></span>
+                            <input
+                              type="text"
+                              class="form-control datetimepicker"
+                              placeholder="dd-mm-yyyy"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div>
+                          <label class="form-label">Your Bio</label>
+                          <textarea class="form-control"></textarea>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <h6 class="user-title">Address</h6>
+                  <div class="row address-info">
+                    <div class="col-md-12">
+                      <div class="mb-3">
+                        <label class="form-label">Address</label>
+                        <input type="text" class="form-control" />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="mb-3">
+                        <label class="form-label">Country</label>
+                        <input type="text" class="form-control" />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="mb-3">
+                        <label class="form-label">State</label>
+                        <input type="text" class="form-control" />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="mb-3">
+                        <label class="form-label">City</label>
+                        <input type="text" class="form-control" />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="mb-3">
+                        <label class="form-label">Postal Code</label>
+                        <input type="text" class="form-control" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="acc-submit d-flex justify-content-end">
+                    <a href="javascript:void(0);" class="btn btn-light me-3"
+                      >Cancel</a
+                    >
+                    <a href="javascript:void(0);" class="btn btn-dark"
+                      >Save Changes</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /Account Settings -->
+          </div>
+          <!-- /profile-settings -->
+        </div>
+      </div>
+      <!-- /Page Wrapper -->
+    </div>
+    <!-- /Main Wrapper -->
+
+    <!-- Jquery JS -->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Wow JS -->
+    <script src="assets/js/wow.min.js"></script>
+
+    <!-- Slimscroll JS -->
+    <script src="assets/js/jquery.slimscroll.min.js"></script>
+
+    <!-- select JS -->
+    <script src="assets/plugins/select2/js/select2.min.js"></script>
+
+    <!-- Datepicker Core JS -->
+    <script src="assets/plugins/moment/moment.js"></script>
+    <script src="assets/js/bootstrap-datetimepicker.min.js"></script>
+
+    <!-- Datatables JS -->
+    <script src="assets/plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="assets/plugins/datatables/datatables.min.js"></script>
+
+    <!-- Script JS -->
+    <script src="assets/js/script.js"></script>
+    <script
+      src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js"
+      data-cf-settings="ce85867347271a71704a5a43-|49"
+      defer
+    ></script>
+    <script
+      defer
+      src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015"
+      integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
+      data-cf-beacon='{"rayId":"97b4cfc8af2a3fa8","serverTiming":{"name":{"cfExtPri":true,"cfEdge":true,"cfOrigin":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"version":"2025.8.0","token":"3ca157e612a14eccbb30cf6db6691c29"}'
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
